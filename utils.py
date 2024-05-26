@@ -10,7 +10,7 @@ def load_dotenv():
             os.environ[key] = value
 
 
-def load_mapping(path="mapping.json"):
+def load_json(path="data/mapping.json"):
     # Load mapping from a json file
     with open(path) as f:
         return json.load(f)
@@ -23,3 +23,21 @@ def load_map(path="map.txt"):
         for line in f:
             map.append([cell for cell in line.strip().split()])
     return map
+
+
+def read_map(filename):
+    with open(filename, 'r') as file:
+        map_data = []
+        for line in file:
+            row = list(map(int, line.split()))
+            map_data.append(row)
+    return map_data
+
+
+def print_matrix(matrix):
+    for row in matrix:
+        print(row)
+
+
+def convert_pos_to_index(float_position) -> int:
+    return int(float_position + 0.25)

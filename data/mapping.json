@@ -1,0 +1,12 @@
+{
+  "0" : "Arriere de la voiture",
+  "1" : "Avant de la voiture",
+  "2" : "Trottoirs et endroits inaccessibles aux voitures",
+  "3" : "Routes",
+  "4" : "Pietons et cyclistes",
+  "5" : "Feu rouge",
+  "6" : "Feu vert",
+  "7" : "Panneau de cedez-le-passage",
+  "8" : "Panneau de stop",
+  "9" : "Panneau de sens interdit"
+}
